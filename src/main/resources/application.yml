@@ -1,0 +1,26 @@
+jwt:
+  base64-secret: N2M4MjE2YWY1MWE5Y2NjOGFmMmQ2M2JjNzc1MTMyODU2MzRlN2Y0OGJkYmE1YTVhMDJmMTRkYjQxMDllZWM1NDk2NjMwZDk4YjFmZTZkMmU1YTM2YWQwNDc4YzlhNzcxZDY1ZTQzMjdlN2E1M2MxOTNhYWU3OGUxZjBhNjVjNjc
+  token-validity-in-seconds: 86400
+  token-validity-in-seconds-for-remember-me: 2592000
+
+
+eureka:
+  client:
+    enabled: true
+    serviceUrl: #注册中心的注册地址
+      defaultZone: http://127.0.0.1:8888/eureka/
+server:
+  port: 8761
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 10
+  output:
+    ansi:
+      enabled: always
+
+
+
+
+
