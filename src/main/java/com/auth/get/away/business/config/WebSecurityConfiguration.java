@@ -98,9 +98,9 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/register").permitAll()
                 .antMatchers("/api/activate").permitAll()
                 .antMatchers("/api/authenticate").permitAll()
-//                .antMatchers("/api/reset-password/init").permitAll()
-//                .antMatchers("/api/reset-password/finish").permitAll()
-                .antMatchers("/api/user").permitAll()
+                .antMatchers("/api/logOut").permitAll()
+                .antMatchers("/api/reset-password/init").permitAll()
+                .antMatchers("/api/reset-password").permitAll()
                 .antMatchers("/api/**").authenticated()
 //                .anyRequest().authenticated()
                 .and()
@@ -108,7 +108,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     }
 
-    private JWTConfigurer securityConfigurerAdapter() {
+    private JWTConfigurer securityConfigurerAdapter()
+    {
         return new JWTConfigurer(tokenProvider);
     }
 }

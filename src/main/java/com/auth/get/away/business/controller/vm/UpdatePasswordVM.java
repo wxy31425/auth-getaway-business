@@ -5,9 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class RegisterVM {
-    private String confirm;
-    private String mail;
+public class UpdatePasswordVM {
+    private String username;
     private String password;
-    private String phone;
 }

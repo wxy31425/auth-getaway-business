@@ -10,11 +10,6 @@ public class AccountDTO {
     private String id;
 
     /**
-     * 商家Id
-     */
-    private String storeId;
-
-    /**
      * 账户名
      */
     private String username;
@@ -33,7 +28,6 @@ public class AccountDTO {
      */
     private String avatar;
 
-
     /**
      * 账户所有者
      */
@@ -43,4 +37,8 @@ public class AccountDTO {
      * 绑定令牌key
      */
     private String key;
+    /**
+     * 账号状态
+     */
+    private Integer status;
 }
