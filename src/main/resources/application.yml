@@ -16,6 +16,7 @@ spring:
     host: 127.0.0.1
     port: 6379
     database: 10
+    timeout: 2500
   output:
     ansi:
       enabled: always
